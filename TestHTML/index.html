@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    body{font-family: Arial; font-size: 12pt; width: 565pt;}
+    </style>
+    <title>Lineare interpolatie</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+    
+  </head>
+  <body>
+    
+    <h2 > HET MODEL </h2>
+    <br>
+    <p>
+    De gemeten waarden van de grootheid geven we aan met \(y_1,y_2,\dots,y_n\). 
+    Bij deze meetwaarden horen waarden van de variabele, namelijk \(x_1,x_2,\dots,x_n\). 
+    <br><br>
+    Stel we geven het model (de lijn) aan met \(y_{mod}(x)=\beta_0+\beta_1x\). 
+    We kunnen de onbekende coëfficiënten \(\beta_0\) en \(\beta_1\) als volgt uitrekenen:</p>
+
+    $$ 
+    \begin{align}
+    \beta_0&=\frac{\left(\sum y_i\right)(\sum x_i^2)-(\sum x_i)(\sum x_i y_i)}{n(\sum x_i^2)-(\sum x_i)^2} \nonumber \\[2mm]
+    \beta_1&=\frac{n (\sum x_i y_i)-(\sum x_i)(\sum y_i)}{n(\sum x_i^2)-(\sum x_i)^2} \nonumber
+    \end{align} 
+    $$
+
+    <h3 style='color:rgb(101,51,102)'> <b>Voorbeeld</b> </h3>
+    <br>
+    Het verband lijkt op basis van de meetdata lineair te zijn. 
+    Met behulp van bovenstaande uitdrukkingen wordt het volgende model gevonden in Excel:</p>
+    $$ ​E_{mod}\left(T\right)=3640,40-0,63 T$$
+
+  </body>
+</html>
